@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "file:node_modules/body-parser",
+    "express": "^4.16.2"
+  }
 }
