@@ -131,7 +131,7 @@
         <button type="submit" class="btn btn-primary" id="submit-button"><span class="glyphicon glyphicon-ok"></span> Submit to find your friend!</button>
         <hr class="my-4">
         <div>
-            <a href="">API Friends List | <a href="https://github.com/torismith94/FriendFinder">GitHub Repo
+            <a href="/api/friends">API Friends List | <a href="https://github.com/torismith94/FriendFinder">GitHub Repo
 	</div>
 	</div>
 
@@ -155,12 +155,15 @@
 			}; 
 			console.log(newFriend);
 
+
 			$.post("api/friends", newFriend)
 			.done(function(data) {
 				console.log(data);
 				alert("You've submitted your data! Please wait while we find your friend.");
 			});
 		});
+
+		module.exports = newFriend;
 	</script>
 </body>
 
