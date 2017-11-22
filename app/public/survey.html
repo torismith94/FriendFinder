@@ -128,12 +128,29 @@
                 <option>5 (Strongly Agree)</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Submit to find your friend!</button>
+        <button type="submit" class="btn btn-primary" id="submit-button"><span class="glyphicon glyphicon-ok"></span> Submit to find your friend!</button>
         <hr class="my-4">
         <div>
             <a href="">API Table Link | <a href="">API Wait List
 	</div>
 	</div>
+
+	<script type="text/javascript">
+		$("#submit-button").on("click", function(event) {
+			event.preventDefault();
+			var newFriend = {
+				name: $("#name").val().trim(),
+				photo: $("#imageLink").val().trim(),
+				scores: ($"#")
+			}; 
+
+			$.post("api/friends", newFriend)
+			.done(function(data) {
+				console.log(data);
+				alert("You've submitted your data! Please wait while we find your friend.");
+			});
+		});
+	</script>
 </body>
 
 </html>
