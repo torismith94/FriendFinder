@@ -14,6 +14,22 @@ var friends = [
         5,
         2
      ]
+	}, 
+	{
+    "name": "Ron Burgundy",
+    "photo": "https://cdn.costumewall.com/wp-content/uploads/2015/09/ron-burgundy.jpg",
+    "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+     ]
 	}
 	];
 
